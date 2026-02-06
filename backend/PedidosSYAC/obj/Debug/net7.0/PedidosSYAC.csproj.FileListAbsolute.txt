@@ -283,7 +283,6 @@ C:\Users\DEVTEST06\source\repos\backend\PedidosSYAC\obj\Debug\net7.0\staticwebas
 C:\Users\DEVTEST06\source\repos\backend\PedidosSYAC\obj\Debug\net7.0\staticwebassets.build.json.cache
 C:\Users\DEVTEST06\source\repos\backend\PedidosSYAC\obj\Debug\net7.0\staticwebassets.development.json
 C:\Users\DEVTEST06\source\repos\backend\PedidosSYAC\obj\Debug\net7.0\staticwebassets.build.endpoints.json
-C:\Users\DEVTEST06\source\repos\backend\PedidosSYAC\obj\Debug\net7.0\staticwebassets.upToDateCheck.txt
 C:\Users\DEVTEST06\source\repos\backend\PedidosSYAC\obj\Debug\net7.0\PedidosS.49E939F4.Up2Date
 C:\Users\DEVTEST06\source\repos\backend\PedidosSYAC\obj\Debug\net7.0\PedidosSYAC.dll
 C:\Users\DEVTEST06\source\repos\backend\PedidosSYAC\obj\Debug\net7.0\refint\PedidosSYAC.dll

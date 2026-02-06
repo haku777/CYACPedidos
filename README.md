@@ -14,7 +14,7 @@
         -En proceso...
 
 > codigo sql tablas (Cliente, Producto, Pedido)
-#la creacion de las tablase sera mediante EF Migrador
+#la creacion de las tablas sera mediante EF Migrador y SQL backup
     Tablas:
 
 Cliente
@@ -27,3 +27,5 @@ Pedido
 - []Id, CodigoProducto, Cantidad, Id_Cliente(llave Foranea)
 
 
+![Servicios expuesto](img/1.PNG)
+![EF base de datos](img/2.PNG)
