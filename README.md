@@ -3,10 +3,10 @@
 
 > codigo BackeEnd c# apiREST para ver y solicitar pedidos de productos por cliente
 #Se utiliza codigo de proyecto base apiREST, empleando practicas de:
-- [x]MVC
-- [x]POO
-- [x]SOLID
-- [x]XUNIT
+- [x] MVC
+- [x] POO
+- [x] SOLID
+- [x] XUNIT
 
 ###Nota: aun fatal agretar la tabla pedido y su funcionamiento
 
@@ -18,14 +18,14 @@
     Tablas:
 
 Cliente
-- [x]Id, Nombre, Direccion
+- [x] Id, Nombre, Direccion
 
 Producto
-- [x]Id , NombreProducto, Cantidad, ValorUnitario
+- [x] Id , NombreProducto, Cantidad, ValorUnitario
 
 Pedido
-- []Id, CodigoProducto, Cantidad, Id_Cliente(llave Foranea)
+- [ ] Id, CodigoProducto, Cantidad, Id_Cliente(llave Foranea)
 
 
-![Servicios expuesto](img/1.PNG)
-![EF base de datos](img/2.PNG)
+![Servicios expuesto](img/1.png)
+![EF base de datos](img/2.png)
