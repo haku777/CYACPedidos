@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PedidosSYAC.Common.Dto.Autors
+{
+    public class ClientesActualizarDto
+    {
+        [Required]
+        public int Id { get; set; }
+        [Required]
+        public string Nombre { get; set; }
+        public string Direccion { get; set; }
+    }
+}

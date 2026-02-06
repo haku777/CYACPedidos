@@ -1,0 +1,17 @@
+C:\Users\DEVTEST06\Music\nexosLibreriaNET-main\nexosLibreriaAPI\nexos_Libreria_API\Nexos_Libreria_API.Services\bin\Debug\net7.0\PedidosSYAC.Services.deps.json
+C:\Users\DEVTEST06\Music\nexosLibreriaNET-main\nexosLibreriaAPI\nexos_Libreria_API\Nexos_Libreria_API.Services\bin\Debug\net7.0\PedidosSYAC.Services.dll
+C:\Users\DEVTEST06\Music\nexosLibreriaNET-main\nexosLibreriaAPI\nexos_Libreria_API\Nexos_Libreria_API.Services\bin\Debug\net7.0\PedidosSYAC.Services.pdb
+C:\Users\DEVTEST06\Music\nexosLibreriaNET-main\nexosLibreriaAPI\nexos_Libreria_API\Nexos_Libreria_API.Services\bin\Debug\net7.0\PedidosSYAC.Common.dll
+C:\Users\DEVTEST06\Music\nexosLibreriaNET-main\nexosLibreriaAPI\nexos_Libreria_API\Nexos_Libreria_API.Services\bin\Debug\net7.0\PedidosSYAC.DataAccess.dll
+C:\Users\DEVTEST06\Music\nexosLibreriaNET-main\nexosLibreriaAPI\nexos_Libreria_API\Nexos_Libreria_API.Services\bin\Debug\net7.0\PedidosSYAC.Common.pdb
+C:\Users\DEVTEST06\Music\nexosLibreriaNET-main\nexosLibreriaAPI\nexos_Libreria_API\Nexos_Libreria_API.Services\bin\Debug\net7.0\PedidosSYAC.DataAccess.pdb
+C:\Users\DEVTEST06\Music\nexosLibreriaNET-main\nexosLibreriaAPI\nexos_Libreria_API\Nexos_Libreria_API.Services\obj\Debug\net7.0\PedidosSYAC.Services.csproj.AssemblyReference.cache
+C:\Users\DEVTEST06\Music\nexosLibreriaNET-main\nexosLibreriaAPI\nexos_Libreria_API\Nexos_Libreria_API.Services\obj\Debug\net7.0\PedidosSYAC.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DEVTEST06\Music\nexosLibreriaNET-main\nexosLibreriaAPI\nexos_Libreria_API\Nexos_Libreria_API.Services\obj\Debug\net7.0\PedidosSYAC.Services.AssemblyInfoInputs.cache
+C:\Users\DEVTEST06\Music\nexosLibreriaNET-main\nexosLibreriaAPI\nexos_Libreria_API\Nexos_Libreria_API.Services\obj\Debug\net7.0\PedidosSYAC.Services.AssemblyInfo.cs
+C:\Users\DEVTEST06\Music\nexosLibreriaNET-main\nexosLibreriaAPI\nexos_Libreria_API\Nexos_Libreria_API.Services\obj\Debug\net7.0\PedidosSYAC.Services.csproj.CoreCompileInputs.cache
+C:\Users\DEVTEST06\Music\nexosLibreriaNET-main\nexosLibreriaAPI\nexos_Libreria_API\Nexos_Libreria_API.Services\obj\Debug\net7.0\PedidosS.A4488CF2.Up2Date
+C:\Users\DEVTEST06\Music\nexosLibreriaNET-main\nexosLibreriaAPI\nexos_Libreria_API\Nexos_Libreria_API.Services\obj\Debug\net7.0\PedidosSYAC.Services.dll
+C:\Users\DEVTEST06\Music\nexosLibreriaNET-main\nexosLibreriaAPI\nexos_Libreria_API\Nexos_Libreria_API.Services\obj\Debug\net7.0\refint\PedidosSYAC.Services.dll
+C:\Users\DEVTEST06\Music\nexosLibreriaNET-main\nexosLibreriaAPI\nexos_Libreria_API\Nexos_Libreria_API.Services\obj\Debug\net7.0\PedidosSYAC.Services.pdb
+C:\Users\DEVTEST06\Music\nexosLibreriaNET-main\nexosLibreriaAPI\nexos_Libreria_API\Nexos_Libreria_API.Services\obj\Debug\net7.0\ref\PedidosSYAC.Services.dll
