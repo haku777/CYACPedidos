@@ -1,17 +1,19 @@
 
 #Aplicacion web de pedidos
 
-Tablas:
+codigo BackeEnd c# apiREST para ver y solicitar pedidos de productos por cliente
 
-Cliente
-	Id, Nombre, Direccion
+codigo frontend Angular (Inconcluso) //nota actualizable
 
-Producto
-	Id , NombreProducto, Cantidad, ValorUnitario
+codigo sql tablas (Cliente, Producto, Pedido)
+    Tablas:
+        Cliente
+            Id, Nombre, Direccion
 
-Pedido
-	Id, CodigoProducto, Cantidad, Id_Cliente
+        Producto
+            Id , NombreProducto, Cantidad, ValorUnitario
 
+        Pedido
+            Id, CodigoProducto, Cantidad, Id_Cliente
 
-	
 
