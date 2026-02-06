@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosSYAC.test", "PedidosSYAC.test\PedidosSYAC.test.csproj", "{35562770-AD88-424A-85FF-B9152378FF75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosSYAC", "PedidosSYAC\PedidosSYAC.csproj", "{764510DD-D58D-84FB-B5D9-5DFBE27E8A20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosSYAC.Common", "PedidosSYAC.Common\PedidosSYAC.Common.csproj", "{1B772CF6-2D70-2478-D04B-185BDCC6A310}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosSYAC.DataAccess", "PedidosSYAC.DataAccess\PedidosSYAC.DataAccess.csproj", "{43626893-56D5-1E46-0402-E2E7214BFDDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosSYAC.Services", "PedidosSYAC.Services\PedidosSYAC.Services.csproj", "{A8EA1DBB-C3B8-B347-3925-4904DC065099}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35562770-AD88-424A-85FF-B9152378FF75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35562770-AD88-424A-85FF-B9152378FF75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35562770-AD88-424A-85FF-B9152378FF75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35562770-AD88-424A-85FF-B9152378FF75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{764510DD-D58D-84FB-B5D9-5DFBE27E8A20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{764510DD-D58D-84FB-B5D9-5DFBE27E8A20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{764510DD-D58D-84FB-B5D9-5DFBE27E8A20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{764510DD-D58D-84FB-B5D9-5DFBE27E8A20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B772CF6-2D70-2478-D04B-185BDCC6A310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B772CF6-2D70-2478-D04B-185BDCC6A310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B772CF6-2D70-2478-D04B-185BDCC6A310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B772CF6-2D70-2478-D04B-185BDCC6A310}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43626893-56D5-1E46-0402-E2E7214BFDDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43626893-56D5-1E46-0402-E2E7214BFDDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43626893-56D5-1E46-0402-E2E7214BFDDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43626893-56D5-1E46-0402-E2E7214BFDDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8EA1DBB-C3B8-B347-3925-4904DC065099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8EA1DBB-C3B8-B347-3925-4904DC065099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8EA1DBB-C3B8-B347-3925-4904DC065099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8EA1DBB-C3B8-B347-3925-4904DC065099}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2224C605-934D-47CA-A24F-107AAAFAB860}
+	EndGlobalSection
+EndGlobal
