@@ -8,13 +8,13 @@
 - [x] SOLID
 - [x] XUNIT
 
-###Nota: aun fatal agretar la tabla pedido y su funcionamiento
+> :information_source: aun fatal agretar la tabla pedido y su funcionamiento
 
 > codigo frontend Angular (Inconcluso) //nota actualizable
         -En proceso...
 
 > codigo sql tablas (Cliente, Producto, Pedido)
-#la creacion de las tablas sera mediante EF Migrador y SQL backup
+> :warning: la creacion de las tablas sera mediante EF Migrador y SQL backup(EF emitio que no puede confiar el el certificado ssl)
     Tablas:
 
 Cliente

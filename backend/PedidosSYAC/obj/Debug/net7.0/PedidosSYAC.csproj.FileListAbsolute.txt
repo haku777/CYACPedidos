@@ -289,3 +289,4 @@ C:\Users\DEVTEST06\source\repos\backend\PedidosSYAC\obj\Debug\net7.0\refint\Pedi
 C:\Users\DEVTEST06\source\repos\backend\PedidosSYAC\obj\Debug\net7.0\PedidosSYAC.pdb
 C:\Users\DEVTEST06\source\repos\backend\PedidosSYAC\obj\Debug\net7.0\PedidosSYAC.genruntimeconfig.cache
 C:\Users\DEVTEST06\source\repos\backend\PedidosSYAC\obj\Debug\net7.0\ref\PedidosSYAC.dll
+C:\Users\DEVTEST06\source\repos\backend\PedidosSYAC\obj\Debug\net7.0\staticwebassets.upToDateCheck.txt

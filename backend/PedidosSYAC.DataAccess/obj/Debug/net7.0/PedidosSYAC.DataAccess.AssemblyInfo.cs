@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PedidosSYAC.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7db73c78ce8a888319f18312f3673a33215cabf9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0284d9dd64eaf628c0f3a2e73e0ab82439279a6e")]
 [assembly: System.Reflection.AssemblyProductAttribute("PedidosSYAC.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PedidosSYAC.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
