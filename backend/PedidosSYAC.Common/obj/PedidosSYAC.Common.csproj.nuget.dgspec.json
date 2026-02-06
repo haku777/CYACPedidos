@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DEVTEST06\\Music\\PedidosSYAC.Common\\PedidosSYAC.Common.csproj": {}
+    "C:\\Users\\DEVTEST06\\source\\repos\\backend\\PedidosSYAC.Common\\PedidosSYAC.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DEVTEST06\\Music\\PedidosSYAC.Common\\PedidosSYAC.Common.csproj": {
+    "C:\\Users\\DEVTEST06\\source\\repos\\backend\\PedidosSYAC.Common\\PedidosSYAC.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DEVTEST06\\Music\\PedidosSYAC.Common\\PedidosSYAC.Common.csproj",
+        "projectUniqueName": "C:\\Users\\DEVTEST06\\source\\repos\\backend\\PedidosSYAC.Common\\PedidosSYAC.Common.csproj",
         "projectName": "PedidosSYAC.Common",
-        "projectPath": "C:\\Users\\DEVTEST06\\Music\\PedidosSYAC.Common\\PedidosSYAC.Common.csproj",
+        "projectPath": "C:\\Users\\DEVTEST06\\source\\repos\\backend\\PedidosSYAC.Common\\PedidosSYAC.Common.csproj",
         "packagesPath": "C:\\Users\\DEVTEST06\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DEVTEST06\\Music\\PedidosSYAC.Common\\obj\\",
+        "outputPath": "C:\\Users\\DEVTEST06\\source\\repos\\backend\\PedidosSYAC.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

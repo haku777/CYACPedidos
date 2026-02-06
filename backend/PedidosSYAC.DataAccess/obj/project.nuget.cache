@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6Fk4jGflhhM=",
+  "dgSpecHash": "vdO5e69QwXY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\DEVTEST06\\Music\\PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\DEVTEST06\\source\\repos\\backend\\PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DEVTEST06\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\DEVTEST06\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

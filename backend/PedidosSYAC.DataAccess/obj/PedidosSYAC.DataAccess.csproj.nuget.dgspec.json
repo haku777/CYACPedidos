@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DEVTEST06\\Music\\PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj": {}
+    "C:\\Users\\DEVTEST06\\source\\repos\\backend\\PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DEVTEST06\\Music\\PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj": {
+    "C:\\Users\\DEVTEST06\\source\\repos\\backend\\PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DEVTEST06\\Music\\PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\DEVTEST06\\source\\repos\\backend\\PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj",
         "projectName": "PedidosSYAC.DataAccess",
-        "projectPath": "C:\\Users\\DEVTEST06\\Music\\PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj",
+        "projectPath": "C:\\Users\\DEVTEST06\\source\\repos\\backend\\PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj",
         "packagesPath": "C:\\Users\\DEVTEST06\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DEVTEST06\\Music\\PedidosSYAC.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\DEVTEST06\\source\\repos\\backend\\PedidosSYAC.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

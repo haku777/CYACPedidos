@@ -21,11 +21,11 @@ builder.Services.AddScoped<IClientes, ClientesService>();
 
 var app = builder.Build();
 
-//using (var scope = app.Services.CreateScope())
-//{
-//    var dataContext = scope.ServiceProvider.GetRequiredService<PedidosContext>();
-//    dataContext.Database.Migrate();
-//}
+using (var scope = app.Services.CreateScope())
+{
+    var dataContext = scope.ServiceProvider.GetRequiredService<PedidosContext>();
+    dataContext.Database.Migrate();
+}
 
 if (app.Environment.IsDevelopment())
     {
