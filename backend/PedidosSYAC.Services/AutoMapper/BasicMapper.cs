@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using PedidosSYAC.Common.Dto;
 using PedidosSYAC.DataAccess.Entity;
 using PedidosSYAC.Common.Dto.Autors;
+using PedidosSYAC.Common.Dto.Productos;
 
 namespace PedidosSYAC.Services.AutoMapper
 {

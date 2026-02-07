@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
-using PedidosSYAC.Common.Dto;
+using PedidosSYAC.Common.Dto.Productos;
 using PedidosSYAC.DataAccess;
 using PedidosSYAC.DataAccess.Entity;
 using PedidosSYAC.Services.Interfaces;
@@ -51,9 +51,9 @@ namespace PedidosSYAC.Services.Services
             var existsProducto = _context.Produtos.FirstOrDefault(b => b.Id == producto.Id);
             if (existsProducto != null)
             {
-                existsProducto.NombreProducto = producto.NombreProducto;
+                existsProducto.Nombre = producto.Nombre;
                 existsProducto.Cantidad = producto.Cantidad;
-                existsProducto.valorUnitario = producto.valorUnitario;
+                existsProducto.ValorUnitario = producto.ValorUnitario;
                 
                 await _context.SaveChangesAsync();
             }

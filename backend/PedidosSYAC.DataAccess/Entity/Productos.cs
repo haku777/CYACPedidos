@@ -15,9 +15,9 @@ namespace PedidosSYAC.DataAccess.Entity
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public string NombreProducto { get; set; }
+        public string Nombre { get; set; }
         public int Cantidad { get; set; }
-        public string valorUnitario { get; set; }
+        public int ValorUnitario { get; set; }
 
     }
 }

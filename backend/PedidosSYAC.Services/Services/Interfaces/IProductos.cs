@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PedidosSYAC.Common.Dto;
+using PedidosSYAC.Common.Dto.Productos;
 
 namespace PedidosSYAC.Services.Interfaces
 {

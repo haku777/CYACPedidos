@@ -15,15 +15,25 @@ CREATE TABLE Productos (
     valorUnitario INT
 );
 
+CREATE TABLE Estados (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    NombreEstado NVARCHAR(100) NOT NULL
+);
+
+
 CREATE TABLE Pedidos (
     Id INT PRIMARY KEY IDENTITY(1,1),
-    Id_Producto INT, 
     Id_Cliente INT,
+    Id_Producto INT, 
+    Id_Estado INT,
     Total INT,
 
     CONSTRAINT FK_Pedido_Usuario FOREIGN KEY (Id_Cliente) 
         REFERENCES Clientes(Id),
         
     CONSTRAINT FK_Pedido_Producto FOREIGN KEY (Id_Producto) 
-        REFERENCES Productos(Id)
+        REFERENCES Productos(Id),
+        
+    CONSTRAINT FK_Pedido_Estado FOREIGN KEY (Id_Estado) 
+        REFERENCES Estados(Id)
 );

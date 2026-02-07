@@ -659,7 +659,7 @@
       "ProductoActualizacionDto": {
         "required": [
           "id",
-          "nombreProducto"
+          "nombre"
         ],
         "type": "object",
         "properties": {
@@ -667,7 +667,7 @@
             "type": "integer",
             "format": "int32"
           },
-          "nombreProducto": {
+          "nombre": {
             "maxLength": 50,
             "minLength": 1,
             "type": "string"
@@ -677,8 +677,8 @@
             "format": "int32"
           },
           "valorUnitario": {
-            "type": "string",
-            "nullable": true
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

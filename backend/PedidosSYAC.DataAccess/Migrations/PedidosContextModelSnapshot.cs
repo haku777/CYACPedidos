@@ -42,6 +42,54 @@ namespace PedidosSYAC.DataAccess.Migrations
                     b.ToTable("Clientes");
                 });
 
+            modelBuilder.Entity("PedidosSYAC.DataAccess.Entity.Estados", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Estados");
+                });
+
+            modelBuilder.Entity("PedidosSYAC.DataAccess.Entity.Pedidos", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Id_Cliente")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Id_Estado")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Id_Producto")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ValorTotal")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Id_Cliente");
+
+                    b.HasIndex("Id_Estado");
+
+                    b.HasIndex("Id_Producto");
+
+                    b.ToTable("Pedidos");
+                });
+
             modelBuilder.Entity("PedidosSYAC.DataAccess.Entity.Productos", b =>
                 {
                     b.Property<int>("Id")
@@ -53,17 +101,43 @@ namespace PedidosSYAC.DataAccess.Migrations
                     b.Property<int>("Cantidad")
                         .HasColumnType("int");
 
-                    b.Property<string>("NombreProducto")
+                    b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("valorUnitario")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("ValorUnitario")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.ToTable("Produtos");
+                });
+
+            modelBuilder.Entity("PedidosSYAC.DataAccess.Entity.Pedidos", b =>
+                {
+                    b.HasOne("PedidosSYAC.DataAccess.Entity.Clientes", "Cliente")
+                        .WithMany()
+                        .HasForeignKey("Id_Cliente")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("PedidosSYAC.DataAccess.Entity.Estados", "Estado")
+                        .WithMany()
+                        .HasForeignKey("Id_Estado")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("PedidosSYAC.DataAccess.Entity.Productos", "Producto")
+                        .WithMany()
+                        .HasForeignKey("Id_Producto")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cliente");
+
+                    b.Navigation("Estado");
+
+                    b.Navigation("Producto");
                 });
 #pragma warning restore 612, 618
         }

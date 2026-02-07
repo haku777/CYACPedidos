@@ -3674,23 +3674,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DEVTEST06\\.nuget\\packages\\": {},
+    "C:\\Users\\jimmy\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DEVTEST06\\source\\repos\\backend\\PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj",
+      "projectUniqueName": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj",
       "projectName": "PedidosSYAC.DataAccess",
-      "projectPath": "C:\\Users\\DEVTEST06\\source\\repos\\backend\\PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj",
-      "packagesPath": "C:\\Users\\DEVTEST06\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DEVTEST06\\source\\repos\\backend\\PedidosSYAC.DataAccess\\obj\\",
+      "projectPath": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj",
+      "packagesPath": "C:\\Users\\jimmy\\.nuget\\packages\\",
+      "outputPath": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\DEVTEST06\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jimmy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3699,6 +3699,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3758,7 +3759,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

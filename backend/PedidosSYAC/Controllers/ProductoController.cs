@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using PedidosSYAC.Common.Dto;
 using PedidosSYAC.Services.Interfaces;
 using PedidosSYAC.Services.Services.Interfaces;
 using PedidosSYAC.Common.Dto.Autors;
+using PedidosSYAC.Common.Dto.Productos;
 
 namespace PedidosSYAC.Controllers
 {

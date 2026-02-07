@@ -193,13 +193,13 @@
     "Parameters": [
       {
         "Name": "producto",
-        "Type": "PedidosSYAC.Common.Dto.ProductoCreacionDto",
+        "Type": "PedidosSYAC.Common.Dto.Productos.ProductoCreacionDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "PedidosSYAC.Common.Dto.ProductoDto",
+        "Type": "PedidosSYAC.Common.Dto.Productos.ProductoDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -265,7 +265,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "PedidosSYAC.Common.Dto.ProductoDto",
+        "Type": "PedidosSYAC.Common.Dto.Productos.ProductoDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -285,7 +285,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[PedidosSYAC.Common.Dto.ProductoDto, PedidosSYAC.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[PedidosSYAC.Common.Dto.Productos.ProductoDto, PedidosSYAC.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -305,7 +305,7 @@
     "Parameters": [
       {
         "Name": "producto",
-        "Type": "PedidosSYAC.Common.Dto.ProductoActualizacionDto",
+        "Type": "PedidosSYAC.Common.Dto.Productos.ProductoActualizacionDto",
         "IsRequired": true
       }
     ],

@@ -6216,23 +6216,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DEVTEST06\\.nuget\\packages\\": {},
+    "C:\\Users\\jimmy\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DEVTEST06\\source\\repos\\backend\\PedidosSYAC.Services\\PedidosSYAC.Services.csproj",
+      "projectUniqueName": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.Services\\PedidosSYAC.Services.csproj",
       "projectName": "PedidosSYAC.Services",
-      "projectPath": "C:\\Users\\DEVTEST06\\source\\repos\\backend\\PedidosSYAC.Services\\PedidosSYAC.Services.csproj",
-      "packagesPath": "C:\\Users\\DEVTEST06\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DEVTEST06\\source\\repos\\backend\\PedidosSYAC.Services\\obj\\",
+      "projectPath": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.Services\\PedidosSYAC.Services.csproj",
+      "packagesPath": "C:\\Users\\jimmy\\.nuget\\packages\\",
+      "outputPath": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\DEVTEST06\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jimmy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6241,17 +6241,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\DEVTEST06\\source\\repos\\backend\\PedidosSYAC.Common\\PedidosSYAC.Common.csproj": {
-              "projectPath": "C:\\Users\\DEVTEST06\\source\\repos\\backend\\PedidosSYAC.Common\\PedidosSYAC.Common.csproj"
+            "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.Common\\PedidosSYAC.Common.csproj": {
+              "projectPath": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.Common\\PedidosSYAC.Common.csproj"
             },
-            "C:\\Users\\DEVTEST06\\source\\repos\\backend\\PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\DEVTEST06\\source\\repos\\backend\\PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj"
+            "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj": {
+              "projectPath": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj"
             }
           }
         }
@@ -6301,7 +6302,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
