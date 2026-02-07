@@ -2,14 +2,31 @@
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace PedidosSYAC.DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class Update2 : Migration
+    public partial class Inicial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Clientes",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Identificacion = table.Column<int>(type: "int", nullable: false),
+                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Direccion = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Clientes", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Estados",
                 columns: table => new
@@ -21,6 +38,21 @@ namespace PedidosSYAC.DataAccess.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Estados", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Productos",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Cantidad = table.Column<int>(type: "int", nullable: false),
+                    ValorUnitario = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Productos", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -50,11 +82,21 @@ namespace PedidosSYAC.DataAccess.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Pedidos_Produtos_Id_Producto",
+                        name: "FK_Pedidos_Productos_Id_Producto",
                         column: x => x.Id_Producto,
-                        principalTable: "Produtos",
+                        principalTable: "Productos",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "Estados",
+                columns: new[] { "Id", "Estado" },
+                values: new object[,]
+                {
+                    { 1, "Registrado" },
+                    { 2, "Confirmar" },
+                    { 3, "Anular" }
                 });
 
             migrationBuilder.CreateIndex(
@@ -80,7 +122,13 @@ namespace PedidosSYAC.DataAccess.Migrations
                 name: "Pedidos");
 
             migrationBuilder.DropTable(
+                name: "Clientes");
+
+            migrationBuilder.DropTable(
                 name: "Estados");
+
+            migrationBuilder.DropTable(
+                name: "Productos");
         }
     }
 }

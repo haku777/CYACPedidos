@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B772CF6-2D70-2478-D04B-185BDCC6A310}|PedidosSYAC.Common\\PedidosSYAC.Common.csproj|g:\\archivos\\haku777\\net\\syacpedidos\\syacpedidos\\backend\\pedidossyac.common\\dto\\clientes\\clientescreaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B772CF6-2D70-2478-D04B-185BDCC6A310}|PedidosSYAC.Common\\PedidosSYAC.Common.csproj|solutionrelative:pedidossyac.common\\dto\\clientes\\clientescreaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8EA1DBB-C3B8-B347-3925-4904DC065099}|PedidosSYAC.Services\\PedidosSYAC.Services.csproj|g:\\archivos\\haku777\\net\\syacpedidos\\syacpedidos\\backend\\pedidossyac.services\\services\\clientesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8EA1DBB-C3B8-B347-3925-4904DC065099}|PedidosSYAC.Services\\PedidosSYAC.Services.csproj|solutionrelative:pedidossyac.services\\services\\clientesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43626893-56D5-1E46-0402-E2E7214BFDDE}|PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj|g:\\archivos\\haku777\\net\\syacpedidos\\syacpedidos\\backend\\pedidossyac.dataaccess\\pedidoscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43626893-56D5-1E46-0402-E2E7214BFDDE}|PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj|solutionrelative:pedidossyac.dataaccess\\pedidoscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{764510DD-D58D-84FB-B5D9-5DFBE27E8A20}|PedidosSYAC\\PedidosSYAC.csproj|g:\\archivos\\haku777\\net\\syacpedidos\\syacpedidos\\backend\\pedidossyac\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{764510DD-D58D-84FB-B5D9-5DFBE27E8A20}|PedidosSYAC\\PedidosSYAC.csproj|solutionrelative:pedidossyac\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{764510DD-D58D-84FB-B5D9-5DFBE27E8A20}|PedidosSYAC\\PedidosSYAC.csproj|g:\\archivos\\haku777\\net\\syacpedidos\\syacpedidos\\backend\\pedidossyac\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{764510DD-D58D-84FB-B5D9-5DFBE27E8A20}|PedidosSYAC\\PedidosSYAC.csproj|solutionrelative:pedidossyac\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8EA1DBB-C3B8-B347-3925-4904DC065099}|PedidosSYAC.Services\\PedidosSYAC.Services.csproj|g:\\archivos\\haku777\\net\\syacpedidos\\syacpedidos\\backend\\pedidossyac.services\\services\\produtosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8EA1DBB-C3B8-B347-3925-4904DC065099}|PedidosSYAC.Services\\PedidosSYAC.Services.csproj|solutionrelative:pedidossyac.services\\services\\produtosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{764510DD-D58D-84FB-B5D9-5DFBE27E8A20}|PedidosSYAC\\PedidosSYAC.csproj|g:\\archivos\\haku777\\net\\syacpedidos\\syacpedidos\\backend\\pedidossyac\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{764510DD-D58D-84FB-B5D9-5DFBE27E8A20}|PedidosSYAC\\PedidosSYAC.csproj|solutionrelative:pedidossyac\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43626893-56D5-1E46-0402-E2E7214BFDDE}|PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj|g:\\archivos\\haku777\\net\\syacpedidos\\syacpedidos\\backend\\pedidossyac.dataaccess\\entity\\productosxpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43626893-56D5-1E46-0402-E2E7214BFDDE}|PedidosSYAC.DataAccess\\PedidosSYAC.DataAccess.csproj|solutionrelative:pedidossyac.dataaccess\\entity\\productosxpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B772CF6-2D70-2478-D04B-185BDCC6A310}|PedidosSYAC.Common\\PedidosSYAC.Common.csproj|g:\\archivos\\haku777\\net\\syacpedidos\\syacpedidos\\backend\\pedidossyac.common\\dto\\clientes\\clientesactualizardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B772CF6-2D70-2478-D04B-185BDCC6A310}|PedidosSYAC.Common\\PedidosSYAC.Common.csproj|solutionrelative:pedidossyac.common\\dto\\clientes\\clientesactualizardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B772CF6-2D70-2478-D04B-185BDCC6A310}|PedidosSYAC.Common\\PedidosSYAC.Common.csproj|g:\\archivos\\haku777\\net\\syacpedidos\\syacpedidos\\backend\\pedidossyac.common\\dto\\clientes\\clientesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B772CF6-2D70-2478-D04B-185BDCC6A310}|PedidosSYAC.Common\\PedidosSYAC.Common.csproj|solutionrelative:pedidossyac.common\\dto\\clientes\\clientesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B772CF6-2D70-2478-D04B-185BDCC6A310}|PedidosSYAC.Common\\PedidosSYAC.Common.csproj|g:\\archivos\\haku777\\net\\syacpedidos\\syacpedidos\\backend\\pedidossyac.common\\dto\\clientes\\clientescreaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B772CF6-2D70-2478-D04B-185BDCC6A310}|PedidosSYAC.Common\\PedidosSYAC.Common.csproj|solutionrelative:pedidossyac.common\\dto\\clientes\\clientescreaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{764510DD-D58D-84FB-B5D9-5DFBE27E8A20}|PedidosSYAC\\PedidosSYAC.csproj|g:\\archivos\\haku777\\net\\syacpedidos\\syacpedidos\\backend\\pedidossyac\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{764510DD-D58D-84FB-B5D9-5DFBE27E8A20}|PedidosSYAC\\PedidosSYAC.csproj|solutionrelative:pedidossyac\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +38,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 19,
+          "SelectedChildIndex": 25,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClientesActualizarDto.cs",
+              "DocumentMoniker": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.Common\\Dto\\Clientes\\ClientesActualizarDto.cs",
+              "RelativeDocumentMoniker": "PedidosSYAC.Common\\Dto\\Clientes\\ClientesActualizarDto.cs",
+              "ToolTip": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.Common\\Dto\\Clientes\\ClientesActualizarDto.cs",
+              "RelativeToolTip": "PedidosSYAC.Common\\Dto\\Clientes\\ClientesActualizarDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-07T22:13:50.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClientesCreacionDto.cs",
+              "DocumentMoniker": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.Common\\Dto\\Clientes\\ClientesCreacionDto.cs",
+              "RelativeDocumentMoniker": "PedidosSYAC.Common\\Dto\\Clientes\\ClientesCreacionDto.cs",
+              "ToolTip": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.Common\\Dto\\Clientes\\ClientesCreacionDto.cs",
+              "RelativeToolTip": "PedidosSYAC.Common\\Dto\\Clientes\\ClientesCreacionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-07T22:13:38.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClientesDto.cs",
+              "DocumentMoniker": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.Common\\Dto\\Clientes\\ClientesDto.cs",
+              "RelativeDocumentMoniker": "PedidosSYAC.Common\\Dto\\Clientes\\ClientesDto.cs",
+              "ToolTip": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.Common\\Dto\\Clientes\\ClientesDto.cs",
+              "RelativeToolTip": "PedidosSYAC.Common\\Dto\\Clientes\\ClientesDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-07T22:13:30.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "PedidosSYAC\\Controllers\\ProductosController.cs",
+              "ToolTip": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "PedidosSYAC\\Controllers\\ProductosController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-07T22:13:15.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "PedidosSYAC\\Controllers\\ClientesController.cs",
+              "ToolTip": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "PedidosSYAC\\Controllers\\ClientesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-07T22:13:00.071Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:141:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
@@ -114,80 +183,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClientesCreacionDto.cs",
-              "DocumentMoniker": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.Common\\Dto\\Clientes\\ClientesCreacionDto.cs",
-              "RelativeDocumentMoniker": "PedidosSYAC.Common\\Dto\\Clientes\\ClientesCreacionDto.cs",
-              "ToolTip": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.Common\\Dto\\Clientes\\ClientesCreacionDto.cs",
-              "RelativeToolTip": "PedidosSYAC.Common\\Dto\\Clientes\\ClientesCreacionDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-07T01:19:26.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClientesService.cs",
-              "DocumentMoniker": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.Services\\Services\\ClientesService.cs",
-              "RelativeDocumentMoniker": "PedidosSYAC.Services\\Services\\ClientesService.cs",
-              "ToolTip": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.Services\\Services\\ClientesService.cs",
-              "RelativeToolTip": "PedidosSYAC.Services\\Services\\ClientesService.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAArwCoAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-07T01:17:55.233Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PedidosContext.cs",
-              "DocumentMoniker": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.DataAccess\\PedidosContext.cs",
-              "RelativeDocumentMoniker": "PedidosSYAC.DataAccess\\PedidosContext.cs",
-              "ToolTip": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.DataAccess\\PedidosContext.cs",
-              "RelativeToolTip": "PedidosSYAC.DataAccess\\PedidosContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Title": "ProductosXPedido.cs",
+              "DocumentMoniker": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.DataAccess\\Entity\\ProductosXPedido.cs",
+              "RelativeDocumentMoniker": "PedidosSYAC.DataAccess\\Entity\\ProductosXPedido.cs",
+              "ToolTip": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.DataAccess\\Entity\\ProductosXPedido.cs",
+              "RelativeToolTip": "PedidosSYAC.DataAccess\\Entity\\ProductosXPedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-07T01:14:42.505Z",
+              "WhenOpened": "2026-02-07T22:09:55.691Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProdutosService.cs",
-              "DocumentMoniker": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.Services\\Services\\ProdutosService.cs",
-              "RelativeDocumentMoniker": "PedidosSYAC.Services\\Services\\ProdutosService.cs",
-              "ToolTip": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC.Services\\Services\\ProdutosService.cs",
-              "RelativeToolTip": "PedidosSYAC.Services\\Services\\ProdutosService.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAwwD4AAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-07T01:06:12.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "PedidosSYAC\\Controllers\\ClienteController.cs",
-              "ToolTip": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "PedidosSYAC\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAA9wC4AAABeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-07T00:48:41.723Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC\\Program.cs",
               "RelativeDocumentMoniker": "PedidosSYAC\\Program.cs",
               "ToolTip": "G:\\Archivos\\HAKU777\\NET\\SYACPedidos\\SYACPedidos\\backend\\PedidosSYAC\\Program.cs",
               "RelativeToolTip": "PedidosSYAC\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T16:13:16.24Z",
+              "WhenOpened": "2026-02-07T21:44:54.808Z",
               "EditorCaption": ""
             }
           ]

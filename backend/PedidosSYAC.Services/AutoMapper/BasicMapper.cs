@@ -2,6 +2,7 @@
 using PedidosSYAC.DataAccess.Entity;
 using PedidosSYAC.Common.Dto.Autors;
 using PedidosSYAC.Common.Dto.Productos;
+using PedidosSYAC.Common.Dto.Estados;
 
 namespace PedidosSYAC.Services.AutoMapper
 {
@@ -19,6 +20,7 @@ namespace PedidosSYAC.Services.AutoMapper
             CreateMap<Productos, ProductoActualizacionDto>().ReverseMap();
             CreateMap<Productos, ProductoCreacionDto>().ReverseMap();
            
+            CreateMap<Estados, EstadosDto>().ReverseMap();
         }
     }
 }

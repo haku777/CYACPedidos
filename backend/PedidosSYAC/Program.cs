@@ -18,6 +18,7 @@ builder.Services.AddDbContext<PedidosContext>(options => {
 
 builder.Services.AddScoped<IProductos, ProdutosService>();
 builder.Services.AddScoped<IClientes, ClientesService>();
+builder.Services.AddScoped<IEstados, EstadosService>();
 
 var app = builder.Build();
 

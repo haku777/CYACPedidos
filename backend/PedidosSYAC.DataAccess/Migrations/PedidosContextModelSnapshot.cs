@@ -33,6 +33,9 @@ namespace PedidosSYAC.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Identificacion")
+                        .HasColumnType("int");
+
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -57,6 +60,23 @@ namespace PedidosSYAC.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Estados");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Estado = "Registrado"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Estado = "Confirmar"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Estado = "Anular"
+                        });
                 });
 
             modelBuilder.Entity("PedidosSYAC.DataAccess.Entity.Pedidos", b =>
@@ -110,7 +130,7 @@ namespace PedidosSYAC.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Produtos");
+                    b.ToTable("Productos", (string)null);
                 });
 
             modelBuilder.Entity("PedidosSYAC.DataAccess.Entity.Pedidos", b =>

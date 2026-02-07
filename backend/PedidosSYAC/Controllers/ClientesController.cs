@@ -7,10 +7,10 @@ namespace PedidosSYAC.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ClienteController : ControllerBase
+    public class ClientesController : ControllerBase
     {
         private readonly IClientes _cliente;
-        public ClienteController(IClientes cliente) { 
+        public ClientesController(IClientes cliente) { 
             _cliente = cliente;
         }
 

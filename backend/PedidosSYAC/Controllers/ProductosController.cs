@@ -9,16 +9,15 @@ namespace PedidosSYAC.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ProductoController : ControllerBase
+    public class ProductosController : ControllerBase
     {
-        private readonly ILogger<ProductoController> _logger;
+        private readonly ILogger<ProductosController> _logger;
         private readonly IMapper _mapper;
-        private readonly int maxProductos = 5;
         private IClientes _cliente;
         private IProductos _producto;
-        public ProductoController
+        public ProductosController
             (
-                ILogger<ProductoController> logger
+                ILogger<ProductosController> logger
                 ,IMapper mapper
                 ,IClientes cliente
                 ,IProductos producto
@@ -65,27 +64,11 @@ namespace PedidosSYAC.Controllers
         public async Task<ActionResult<ProductoDto>> AddProducto([FromBody] ProductoCreacionDto producto)
         {
             var getListProductos = await _producto.Get();
-            if (getListProductos.Count() == maxProductos)
+
+            if (getListProductos.Where(b => b.Nombre.ToLower() == producto.Nombre.ToLower()).FirstOrDefault() != null)
             {
-                ModelState.AddModelError("LimiteProductos", "No es posible registrar sel libro, se alcanzó el máximo permitido");
+                ModelState.AddModelError("ProductoExiste", "El Producto ya existe");
                 return BadRequest(ModelState);
-            }
-            if (getListProductos.Where(b => b.NombreProducto.ToLower() == producto.valorUnitario.ToLower()).FirstOrDefault() != null)
-            {
-                ModelState.AddModelError("LibroExiste", "El libro ya existe");
-                return BadRequest(ModelState);
-            }
-            try
-            {
-                ClientesDto cliente =await _cliente.GetById(producto.Id_Cliente);
-                if (cliente == null)
-                {
-                    ModelState.AddModelError("AutorNoValido", "El autor no existe");
-                    return BadRequest(ModelState);
-                }
-            }
-            catch (Exception ex){
-                return BadRequest(ex.Message);
             }
 
             if (!ModelState.IsValid)

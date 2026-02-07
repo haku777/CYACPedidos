@@ -328,6 +328,44 @@
         }
       }
     },
+    "/GetEstados": {
+      "get": {
+        "tags": [
+          "Estados"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EstadosDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EstadosDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EstadosDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Producto/GetProductos": {
       "get": {
         "tags": [
@@ -596,10 +634,6 @@
       "ClientesCreacionDto": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "nombre": {
             "type": "string",
             "nullable": true
@@ -623,6 +657,20 @@
             "nullable": true
           },
           "direccion": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EstadosDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "estado": {
             "type": "string",
             "nullable": true
           }

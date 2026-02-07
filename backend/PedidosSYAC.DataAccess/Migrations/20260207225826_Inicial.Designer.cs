@@ -11,8 +11,8 @@ using PedidosSYAC.DataAccess;
 namespace PedidosSYAC.DataAccess.Migrations
 {
     [DbContext(typeof(PedidosContext))]
-    [Migration("20260207011530_Update2")]
-    partial class Update2
+    [Migration("20260207225826_Inicial")]
+    partial class Inicial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,6 +35,9 @@ namespace PedidosSYAC.DataAccess.Migrations
                     b.Property<string>("Direccion")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Identificacion")
+                        .HasColumnType("int");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -60,6 +63,23 @@ namespace PedidosSYAC.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Estados");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Estado = "Registrado"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Estado = "Confirmar"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Estado = "Anular"
+                        });
                 });
 
             modelBuilder.Entity("PedidosSYAC.DataAccess.Entity.Pedidos", b =>
@@ -113,7 +133,7 @@ namespace PedidosSYAC.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Produtos");
+                    b.ToTable("Productos", (string)null);
                 });
 
             modelBuilder.Entity("PedidosSYAC.DataAccess.Entity.Pedidos", b =>

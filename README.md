@@ -2,11 +2,18 @@
 # Aplicacion web de pedidos
 
 > codigo **BackeEnd** **C#** **apiREST** para ver y solicitar pedidos de productos por cliente
-## Se utiliza codigo de proyecto base apiREST, empleando practicas de:
+## Se utiliza codigo de proyecto base apiREST, se aplican tecnologias como:
+
+- [x] C# .NET 7
+- [x] SQL Server
 - [x] MVC
 - [x] POO
 - [x] SOLID
 - [x] XUNIT
+- [x] AutoMapper
+- [x] Swagger
+- [x] Entity Framework
+- [ ] Angular V --
 
 > :information_source: aun fatal agretar la tabla pedido y su funcionamiento
 
@@ -14,30 +21,35 @@
         ***En proceso...***
 
 > codigo **SQL** `tablas (Cliente, Producto, Pedido)`
-> :warning: la creacion de las tablas sera mediante EF Migrador y SQL backup(EF emitio que no puede confiar el el certificado ssl)
+> la creacion de las tablas es mediante EF Migrador y SQL backup  :warning: (EF emitio que no puede confiar el el certificado ssl durante la prueba)
     Tablas:
 
 *Cliente*
-- [x] Id, Nombre, Direccion
+- [x] Id, Identificacion, Nombre, Direccion
 
 *Producto*
-- [x] Id , NombreProducto, Cantidad, ValorUnitario
+- [x] Id , Nombre, Cantidad, ValorUnitario
+
+*Estado*
+- [x] Id , Estado
 
 *Pedido*
-- [ ] Id, CodigoProducto, Cantidad, Id_Cliente(llave Foranea)
+- [x] Id, Id_Cliente, Id_Producto, Id_Estado, ValorTotal
 
-### Cambios que se realizaran posteriores a la prueba:
+> ### Cambios que se realizaran posteriores a la prueba:
 - [x] Funcionamiento EF
-- [ ] Mejora de entidades y relaciones *Estados*, *PedidosXProducto*
-- [ ] Creacion componentes Angular
+- [x] Funcionalidad que agrega los **Estados** sin intervencion del usuario
+- [x] Mejora de entidades y relaciones `Tablas adicionales` *Estados*, *ProductosXPedido*
+- [ ] Prioridad (Regla prioridad del pedido con base en el monto total; Baja: <= $500, Media: > $500 y <=1000, Alta: >1000)
 - [ ] Se puede implementar un singleton para los **Estados**
+- [ ] Creacion componentes Angular
+- [ ] IU Responsive
 
-[Portafolio](***https://haku777.vercel.app***)
+[***Portafolio***](https://haku777.vercel.app)
+
 
 ![Servicios expuesto](img/1.png)
 ![EF base de datos](img/2.png)
 ![Angular en proceso](img/3.png)
 ![Servicio cliente agregar](img/4.png)
 ![servicio cliente agregar base datos](img/4.1.png)
-
-

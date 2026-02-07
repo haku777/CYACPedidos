@@ -12,6 +12,7 @@ namespace PedidosSYAC.Common.Dto.Autors
         [Required]
         public int Id { get; set; }
         [Required]
+        public int Identificacion { get; set; }
         public string Nombre { get; set; }
         public string Direccion { get; set; }
     }

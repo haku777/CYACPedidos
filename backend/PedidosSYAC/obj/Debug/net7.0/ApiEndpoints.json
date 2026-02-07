@@ -325,5 +325,25 @@
         "StatusCode": 400
       }
     ]
+  },
+  {
+    "ContainingType": "PedidosSYAC.Controllers.EstadosController",
+    "Method": "GetEstados",
+    "RelativePath": "GetEstados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PedidosSYAC.Common.Dto.Estados.EstadosDto, PedidosSYAC.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

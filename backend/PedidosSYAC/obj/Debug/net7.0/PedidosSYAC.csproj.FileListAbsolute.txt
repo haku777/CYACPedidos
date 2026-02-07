@@ -377,10 +377,10 @@ G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC\obj\Debug\ne
 G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC\obj\Debug\net7.0\staticwebassets.build.json.cache
 G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC\obj\Debug\net7.0\staticwebassets.development.json
 G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC\obj\Debug\net7.0\staticwebassets.build.endpoints.json
+G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC\obj\Debug\net7.0\staticwebassets.upToDateCheck.txt
 G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC\obj\Debug\net7.0\PedidosS.49E939F4.Up2Date
 G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC\obj\Debug\net7.0\PedidosSYAC.dll
 G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC\obj\Debug\net7.0\refint\PedidosSYAC.dll
 G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC\obj\Debug\net7.0\PedidosSYAC.pdb
 G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC\obj\Debug\net7.0\PedidosSYAC.genruntimeconfig.cache
 G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC\obj\Debug\net7.0\ref\PedidosSYAC.dll
-G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC\obj\Debug\net7.0\staticwebassets.upToDateCheck.txt

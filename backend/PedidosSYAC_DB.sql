@@ -37,3 +37,8 @@ CREATE TABLE Pedidos (
     CONSTRAINT FK_Pedido_Estado FOREIGN KEY (Id_Estado) 
         REFERENCES Estados(Id)
 );
+
+select * from Clientes
+select * from Productos
+select * from Estados
+select * from Pedidos
