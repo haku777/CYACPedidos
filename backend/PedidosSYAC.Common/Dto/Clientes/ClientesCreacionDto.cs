@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PedidosSYAC.Common.Dto.Autors
+namespace PedidosSYAC.Common.Dto.Clientes
 {
     public class ClientesCreacionDto
     {

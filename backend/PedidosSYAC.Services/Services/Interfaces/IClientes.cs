@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PedidosSYAC.Common.Dto;
-using PedidosSYAC.Common.Dto.Autors;
+using PedidosSYAC.Common.Dto.Clientes;
 
 namespace PedidosSYAC.Services.Services.Interfaces
 {

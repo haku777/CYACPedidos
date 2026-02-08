@@ -20,7 +20,6 @@ namespace PedidosSYAC.DataAccess.Entity
         public int Id_Producto { get; set; }
         [ForeignKey("Id_Producto")]
         public virtual Productos Producto { get; set; }
-        public int Id_Estado { get; set; }
         [ForeignKey("Id_Estado")]
         public virtual Estados Estado { get; set; }
 

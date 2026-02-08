@@ -4,20 +4,21 @@ use PedidosSYAC
 
 CREATE TABLE Clientes (
     Id INT PRIMARY KEY IDENTITY(1,1),
+    Identificacion INT NOT NULL,
     Nombre NVARCHAR(100) NOT NULL,
     Direccion NVARCHAR(255)
 );
 
 CREATE TABLE Productos (
     Id INT PRIMARY KEY IDENTITY(1,1),
-    NombreProducto NVARCHAR(100) NOT NULL,
+    Nombre NVARCHAR(100) NOT NULL,
     Cantidad INT,
     valorUnitario INT
 );
 
 CREATE TABLE Estados (
     Id INT PRIMARY KEY IDENTITY(1,1),
-    NombreEstado NVARCHAR(100) NOT NULL
+    Estado NVARCHAR(100) NOT NULL
 );
 
 
@@ -26,7 +27,7 @@ CREATE TABLE Pedidos (
     Id_Cliente INT,
     Id_Producto INT, 
     Id_Estado INT,
-    Total INT,
+    ValorTotal INT,
 
     CONSTRAINT FK_Pedido_Usuario FOREIGN KEY (Id_Cliente) 
         REFERENCES Clientes(Id),

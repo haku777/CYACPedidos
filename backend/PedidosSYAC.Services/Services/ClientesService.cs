@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
-using PedidosSYAC.Common.Dto.Autors;
+using PedidosSYAC.Common.Dto.Clientes;
 using PedidosSYAC.DataAccess;
 using PedidosSYAC.DataAccess.Entity;
 using PedidosSYAC.Services.Services.Interfaces;

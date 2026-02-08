@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PedidosSYAC.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eef1b3559957e4623d9b2329e02bd49050b32c25")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e854e5c206ffa98496a49dc732b548d6840a2f4e")]
 [assembly: System.Reflection.AssemblyProductAttribute("PedidosSYAC.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PedidosSYAC.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

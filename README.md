@@ -15,10 +15,10 @@
 - [x] Entity Framework
 - [ ] Angular V --
 
-> :information_source: aun fatal agretar la tabla pedido y su funcionamiento
+> :information_source: aun fatal agretar la tabla ProductosXPedido y su funcionamiento
 
-> codigo **frontend** Angular (Inconcluso) //nota actualizable
-        ***En proceso...***
+> codigo **frontend** Angular (Inconcluso) nota actualizable
+***En proceso...***
 
 > codigo **SQL** `tablas (Cliente, Producto, Pedido)`
 > la creacion de las tablas es mediante EF Migrador y SQL backup  :warning: (EF emitio que no puede confiar el el certificado ssl durante la prueba)
@@ -36,14 +36,14 @@
 *Pedido*
 - [x] Id, Id_Cliente, Id_Producto, Id_Estado, ValorTotal
 
-> ### Cambios que se realizaran posteriores a la prueba:
-- [x] Funcionamiento EF
+> ### Cambios que se estan realizando posteriores a la prueba:
+- [x] Funcionamiento EF 100%
 - [x] Funcionalidad que agrega los **Estados** sin intervencion del usuario
 - [x] Mejora de entidades y relaciones `Tablas adicionales` *Estados*, *ProductosXPedido*
 - [ ] Prioridad (Regla prioridad del pedido con base en el monto total; Baja: <= $500, Media: > $500 y <=1000, Alta: >1000)
 - [ ] Se puede implementar un singleton para los **Estados**
 - [ ] Creacion componentes Angular
-- [ ] IU Responsive
+- [ ] UD/IU Responsive
 
 [***Portafolio***](https://haku777.vercel.app)
 
@@ -53,3 +53,9 @@
 ![Angular en proceso](img/3.png)
 ![Servicio cliente agregar](img/4.png)
 ![servicio cliente agregar base datos](img/4.1.png)
+![Tabla estados sin intervencion](img/5.png)
+![Validacion servicio estados](img/6.png)
+![mockup de tablas](img/7.png)
+![mockup de Shop](img/8.png)
+![mockup de Productos](img/9.png)
+![mockup de Pedidos](img/10.png)

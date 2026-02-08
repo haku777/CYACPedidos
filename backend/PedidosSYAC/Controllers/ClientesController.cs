@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PedidosSYAC.Common.Dto.Autors;
+using PedidosSYAC.Common.Dto.Clientes;
 using PedidosSYAC.DataAccess.Entity;
 using PedidosSYAC.Services.Services.Interfaces;
 

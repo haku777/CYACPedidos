@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using PedidosSYAC.DataAccess.Entity;
-using PedidosSYAC.Common.Dto.Autors;
+using PedidosSYAC.Common.Dto.Clientes;
 using PedidosSYAC.Common.Dto.Productos;
 using PedidosSYAC.Common.Dto.Estados;
 
