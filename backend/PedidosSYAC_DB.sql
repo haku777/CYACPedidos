@@ -25,18 +25,32 @@ CREATE TABLE Estados (
 CREATE TABLE Pedidos (
     Id INT PRIMARY KEY IDENTITY(1,1),
     Id_Cliente INT,
-    Id_Producto INT, 
     Id_Estado INT,
     ValorTotal INT,
+    FechaPedido DATETIME DEFAULT GETDATE(),
 
     CONSTRAINT FK_Pedido_Usuario FOREIGN KEY (Id_Cliente) 
         REFERENCES Clientes(Id),
         
-    CONSTRAINT FK_Pedido_Producto FOREIGN KEY (Id_Producto) 
-        REFERENCES Productos(Id),
-        
     CONSTRAINT FK_Pedido_Estado FOREIGN KEY (Id_Estado) 
         REFERENCES Estados(Id)
+);
+
+CREATE TABLE ProdutosXPedidos (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Id_Pedido INT,
+    Id_Producto INT, 
+    Cantidad INT,
+    ValorPorCantidad INT,
+
+    CONSTRAINT FK_ProdutoXPedido_Pedido FOREIGN KEY (Id_Pedido) 
+        REFERENCES Pedidos(Id),
+
+    CONSTRAINT FK_ProdutoXPedido_Usuario FOREIGN KEY (Id_Cliente) 
+        REFERENCES Clientes(Id),
+
+    CONSTRAINT FK_ProdutoXPedido_Producto FOREIGN KEY (Id_Producto) 
+        REFERENCES Productos(Id)
 );
 
 select * from Clientes

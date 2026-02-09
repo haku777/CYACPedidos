@@ -5,10 +5,10 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Cliente/GetClientes": {
+    "/api/Clientes/GetClientes": {
       "get": {
         "tags": [
-          "Cliente"
+          "Clientes"
         ],
         "responses": {
           "200": {
@@ -43,10 +43,10 @@
         }
       }
     },
-    "/api/Cliente/GetClienteById": {
+    "/api/Clientes/GetClienteById": {
       "get": {
         "tags": [
-          "Cliente"
+          "Clientes"
         ],
         "parameters": [
           {
@@ -123,10 +123,10 @@
         }
       }
     },
-    "/api/Cliente/AddCliente": {
+    "/api/Clientes/AddCliente": {
       "post": {
         "tags": [
-          "Cliente"
+          "Clientes"
         ],
         "requestBody": {
           "content": {
@@ -191,10 +191,10 @@
         }
       }
     },
-    "/api/Cliente/UpdateCliente": {
+    "/api/Clientes/UpdateCliente": {
       "put": {
         "tags": [
-          "Cliente"
+          "Clientes"
         ],
         "requestBody": {
           "content": {
@@ -219,6 +219,9 @@
           "200": {
             "description": "Success"
           },
+          "204": {
+            "description": "No Content"
+          },
           "404": {
             "description": "Not Found",
             "content": {
@@ -238,9 +241,6 @@
                 }
               }
             }
-          },
-          "204": {
-            "description": "No Content"
           },
           "400": {
             "description": "Bad Request",
@@ -265,16 +265,17 @@
         }
       }
     },
-    "/api/Cliente/DeleteCliente": {
+    "/api/Clientes/DeleteCliente/{Identificacion}": {
       "delete": {
         "tags": [
-          "Cliente"
+          "Clientes"
         ],
         "parameters": [
           {
-            "name": "Id",
-            "in": "query",
-            "style": "form",
+            "name": "Identificacion",
+            "in": "path",
+            "required": true,
+            "style": "simple",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -366,10 +367,48 @@
         }
       }
     },
-    "/api/Producto/GetProductos": {
+    "/GetPedidos": {
       "get": {
         "tags": [
-          "Producto"
+          "Pedidos"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PedidosDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PedidosDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PedidosDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Productos/GetProductos": {
+      "get": {
+        "tags": [
+          "Productos"
         ],
         "responses": {
           "200": {
@@ -404,19 +443,18 @@
         }
       }
     },
-    "/api/Producto/GetProductoById": {
+    "/api/Productos/GetProductoByName": {
       "get": {
         "tags": [
-          "Producto"
+          "Productos"
         ],
         "parameters": [
           {
-            "name": "Id",
+            "name": "nombreProducto",
             "in": "query",
             "style": "form",
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
             }
           }
         ],
@@ -444,10 +482,10 @@
         }
       }
     },
-    "/api/Producto/AddProducto": {
+    "/api/Productos/AddProducto": {
       "post": {
         "tags": [
-          "Producto"
+          "Productos"
         ],
         "requestBody": {
           "content": {
@@ -492,10 +530,10 @@
         }
       }
     },
-    "/api/Producto/UpdateProducto": {
+    "/api/Productos/UpdateProducto": {
       "put": {
         "tags": [
-          "Producto"
+          "Productos"
         ],
         "requestBody": {
           "content": {
@@ -543,19 +581,19 @@
         }
       }
     },
-    "/api/Producto/DeleteProducto": {
+    "/api/Productos/DeleteProducto/{nombreProducto}": {
       "delete": {
         "tags": [
-          "Producto"
+          "Productos"
         ],
         "parameters": [
           {
-            "name": "Id",
-            "in": "query",
-            "style": "form",
+            "name": "nombreProducto",
+            "in": "path",
+            "required": true,
+            "style": "simple",
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
             }
           }
         ],
@@ -611,18 +649,17 @@
     "schemas": {
       "ClientesActualizarDto": {
         "required": [
-          "id",
-          "nombre"
+          "identificacion"
         ],
         "type": "object",
         "properties": {
-          "id": {
+          "identificacion": {
             "type": "integer",
             "format": "int32"
           },
           "nombre": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "direccion": {
             "type": "string",
@@ -634,6 +671,10 @@
       "ClientesCreacionDto": {
         "type": "object",
         "properties": {
+          "identificacion": {
+            "type": "integer",
+            "format": "int32"
+          },
           "nombre": {
             "type": "string",
             "nullable": true
@@ -649,6 +690,10 @@
         "type": "object",
         "properties": {
           "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "identificacion": {
             "type": "integer",
             "format": "int32"
           },
@@ -673,6 +718,32 @@
           "estado": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PedidosDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_Cliente": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_Producto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_Estado": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "valorTotal": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -706,7 +777,49 @@
       },
       "ProductoActualizacionDto": {
         "required": [
-          "id",
+          "nombre"
+        ],
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "cantidad": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "valorUnitario": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProductoCreacionDto": {
+        "required": [
+          "nombre"
+        ],
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          },
+          "cantidad": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "valorUnitario": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProductoDto": {
+        "required": [
           "nombre"
         ],
         "type": "object",
@@ -727,59 +840,6 @@
           "valorUnitario": {
             "type": "integer",
             "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ProductoCreacionDto": {
-        "required": [
-          "id_Cliente",
-          "nombreProducto"
-        ],
-        "type": "object",
-        "properties": {
-          "nombreProducto": {
-            "maxLength": 50,
-            "minLength": 1,
-            "type": "string"
-          },
-          "cantidad": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "valorUnitario": {
-            "type": "string",
-            "nullable": true
-          },
-          "id_Cliente": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ProductoDto": {
-        "required": [
-          "nombreProducto"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "nombreProducto": {
-            "maxLength": 50,
-            "minLength": 1,
-            "type": "string"
-          },
-          "cantidad": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "valorUnitario": {
-            "type": "string",
-            "nullable": true
           }
         },
         "additionalProperties": false

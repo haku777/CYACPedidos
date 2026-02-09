@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PedidosSYAC.Common.Dto.Clientes;
-using PedidosSYAC.DataAccess.Entity;
 using PedidosSYAC.Services.Services.Interfaces;
 
 namespace PedidosSYAC.Controllers
@@ -10,7 +9,7 @@ namespace PedidosSYAC.Controllers
     public class ClientesController : ControllerBase
     {
         private readonly IClientes _cliente;
-        public ClientesController(IClientes cliente) { 
+        public ClientesController(IClientes cliente) {
             _cliente = cliente;
         }
 
@@ -30,7 +29,7 @@ namespace PedidosSYAC.Controllers
         public async Task<ActionResult<ClientesDto>> GetClienteById(int Id)
         {
             if (Id == 0)
-                return BadRequest();
+                return NotFound();
 
             var result = await _cliente.GetById(Id);
 
@@ -62,16 +61,15 @@ namespace PedidosSYAC.Controllers
         [HttpPut]
         [Route("UpdateCliente")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> UpdateAutor([FromBody] ClientesActualizarDto cliente)
         {
-
             if (cliente == null)
                 return NotFound();
 
-            var result = await _cliente.GetById(cliente.Id);
+            var result = await _cliente.GetById(cliente.Identificacion);
 
             if (result == null)
                 return BadRequest();
@@ -83,22 +81,21 @@ namespace PedidosSYAC.Controllers
 
 
         [HttpDelete]
-        [Route("DeleteCliente")]
+        [Route("DeleteCliente/{Identificacion}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> DeleteCliente(int Id)
+        public async Task<IActionResult> DeleteCliente(int Identificacion)
         {
-            if (Id == 0)
+            if (Identificacion == null || Identificacion == 0)
                 return BadRequest();
 
-            var cliente = await _cliente.GetById(Id);
-            if (cliente == null)
+            int eliminado = await _cliente.DeleteClienteAsync(Identificacion);
+            if (eliminado == 0)
                 return NotFound();
 
-            await _cliente.DeleteCliente(cliente);
 
-            return NoContent();
+            return Ok(new { message = "Cliente eliminado correctamente"});
         }
     }
 }

@@ -10,7 +10,7 @@ namespace PedidosSYAC.Services.Services.Interfaces
         Task<ClientesDto> GetById(int Id);
         Task UpdateCliente(ClientesActualizarDto Cliente);
         Task<ClientesDto> AddCliente(ClientesCreacionDto Cliente);
-        Task DeleteCliente(ClientesDto Cliente);
+        Task<int> DeleteClienteAsync(int identification);
     }
 
 }

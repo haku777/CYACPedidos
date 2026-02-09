@@ -1,10 +1,4 @@
 G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\bin\Debug\net7.0\CoverletSourceRootsMapping_PedidosSYAC.test
-G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\obj\Debug\net7.0\PedidosSYAC.test.csproj.AssemblyReference.cache
-G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\obj\Debug\net7.0\PedidosSYAC.test.GeneratedMSBuildEditorConfig.editorconfig
-G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\obj\Debug\net7.0\PedidosSYAC.test.AssemblyInfoInputs.cache
-G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\obj\Debug\net7.0\PedidosSYAC.test.AssemblyInfo.cs
-G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\obj\Debug\net7.0\PedidosSYAC.test.csproj.CoreCompileInputs.cache
-G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\obj\Debug\net7.0\PedidosSYAC.test.sourcelink.json
 G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\bin\Debug\net7.0\testhost.dll
 G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\bin\Debug\net7.0\PedidosSYAC.deps.json
 G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\bin\Debug\net7.0\PedidosSYAC.runtimeconfig.json
@@ -166,6 +160,12 @@ G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\bin\Deb
 G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\bin\Debug\net7.0\PedidosSYAC.Services.pdb
 G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\bin\Debug\net7.0\PedidosSYAC.pdb
 G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\bin\Debug\net7.0\PedidosSYAC.DataAccess.pdb
+G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\obj\Debug\net7.0\PedidosSYAC.test.csproj.AssemblyReference.cache
+G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\obj\Debug\net7.0\PedidosSYAC.test.GeneratedMSBuildEditorConfig.editorconfig
+G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\obj\Debug\net7.0\PedidosSYAC.test.AssemblyInfoInputs.cache
+G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\obj\Debug\net7.0\PedidosSYAC.test.AssemblyInfo.cs
+G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\obj\Debug\net7.0\PedidosSYAC.test.csproj.CoreCompileInputs.cache
+G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\obj\Debug\net7.0\PedidosSYAC.test.sourcelink.json
 G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\obj\Debug\net7.0\PedidosS.952ECEDC.Up2Date
 G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\obj\Debug\net7.0\PedidosSYAC.test.dll
 G:\Archivos\HAKU777\NET\SYACPedidos\SYACPedidos\backend\PedidosSYAC.test\obj\Debug\net7.0\refint\PedidosSYAC.test.dll

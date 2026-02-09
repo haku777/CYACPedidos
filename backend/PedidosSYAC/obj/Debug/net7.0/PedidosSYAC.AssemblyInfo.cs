@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PedidosSYAC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e854e5c206ffa98496a49dc732b548d6840a2f4e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be1329f2d6085855e25dbebcc9c870f3dd8bb9d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("PedidosSYAC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PedidosSYAC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -13,19 +13,16 @@ namespace PedidosSYAC.Controllers
     {
         private readonly ILogger<ProductosController> _logger;
         private readonly IMapper _mapper;
-        private IClientes _cliente;
         private IProductos _producto;
         public ProductosController
             (
                 ILogger<ProductosController> logger
                 ,IMapper mapper
-                ,IClientes cliente
                 ,IProductos producto
             )
         {
             _logger = logger;
             _mapper = mapper;
-            _cliente = cliente;
             _producto = producto;
         }
 
@@ -42,17 +39,17 @@ namespace PedidosSYAC.Controllers
 
 
         [HttpGet]
-        [Route("GetProductoById")]
+        [Route("GetProductoByName")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<ActionResult<ProductoDto>> GetProductoById(int Id)
+        public async Task<ActionResult<ProductoDto>> GetProductoByname(string nombreProducto)
         {
-            if (Id == 0)
+            if (string.IsNullOrEmpty(nombreProducto))
                 return BadRequest();
 
-            var result = await _producto.GetById(Id);
+            var result = await _producto.GetByName(nombreProducto);
 
             if (result == null)
-                return NotFound();
+                return NotFound(new {message ="Pedido no encontrado"});
 
             return Ok(result);
         }
@@ -91,29 +88,27 @@ namespace PedidosSYAC.Controllers
             if (producto == null)
                 return BadRequest();
 
-            var findProducto = await _producto.GetById(producto.Id);
-            if (findProducto == null)
-                return NotFound();
-
-            if (await _cliente.GetById(findProducto.Id) == null) { 
+            var findProducto = await _producto.GetByName(producto.Nombre);
+            if (findProducto == null) { 
                 ModelState.AddModelError("ProductoNoValido","El Producto no existe");
-                return BadRequest();
+                return BadRequest(ModelState);
             }
+
             await _producto.UpdateProducto(producto);
-            return NoContent();
+            return Ok(new { message = "Producto actualizado!"});
         }
 
         [HttpDelete]
-        [Route("DeleteProducto")]
+        [Route("DeleteProducto/{nombreProducto}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> DeleteProducto(int Id)
+        public async Task<IActionResult> DeleteProducto(string nombreProducto)
         {
-            if (Id == 0)
+            if (string.IsNullOrEmpty(nombreProducto))
                 return BadRequest();
 
-            var producto = await _producto.GetById(Id);
+            var producto = await _producto.GetByName(nombreProducto);
             if (producto == null)
                 return NotFound();
 

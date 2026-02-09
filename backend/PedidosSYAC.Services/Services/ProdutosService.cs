@@ -28,10 +28,9 @@ namespace PedidosSYAC.Services.Services
             return booksList;
         }
 
-
-        public async Task<ProductoDto> GetById(int Id)
+        public async Task<ProductoDto> GetByName(string nombreProducto)
         {
-            var book = await _context.Productos.FirstOrDefaultAsync(b => b.Id == Id);
+            var book = await _context.Productos.FirstOrDefaultAsync(b => b.Nombre == nombreProducto);
             ProductoDto mapBook = _mapper.Map<ProductoDto>(book);
             return mapBook;
         }
@@ -42,13 +41,13 @@ namespace PedidosSYAC.Services.Services
             Productos newBook = _mapper.Map<Productos>(book);
             var result = await _context.Productos.AddAsync(newBook);
             await _context.SaveChangesAsync();
-            ProductoDto newBookAdded = await GetById(result.Entity.Id);
+            ProductoDto newBookAdded = await GetByName(result.Entity.Nombre);
             return newBookAdded;
         }
 
         public async Task UpdateProducto(ProductoActualizacionDto producto)
         {
-            var existsProducto = _context.Productos.FirstOrDefault(b => b.Id == producto.Id);
+            var existsProducto = _context.Productos.FirstOrDefault(b => b.Nombre == producto.Nombre);
             if (existsProducto != null)
             {
                 existsProducto.Nombre = producto.Nombre;

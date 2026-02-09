@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+/*estilos grobales*/
+:root{
+    font-family: "Inter";
+    color-scheme: light dark;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    padding: 20px;
+}

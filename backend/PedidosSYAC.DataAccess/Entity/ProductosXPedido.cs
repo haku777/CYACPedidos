@@ -15,5 +15,6 @@ namespace PedidosSYAC.DataAccess.Entity
         [ForeignKey("Id_Producto")]
         public Productos Id_Producto { get; set; }
         public int Cantidad { get; set; }
+        public int ValorPorCantidad { get; set; }
     }
 }

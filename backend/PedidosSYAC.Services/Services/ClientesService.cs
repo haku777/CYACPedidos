@@ -1,9 +1,11 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PedidosSYAC.Common.Dto.Clientes;
 using PedidosSYAC.DataAccess;
 using PedidosSYAC.DataAccess.Entity;
 using PedidosSYAC.Services.Services.Interfaces;
+using System.Data;
 
 namespace PedidosSYAC.Services.Services
 {
@@ -35,7 +37,7 @@ namespace PedidosSYAC.Services.Services
 
         public async Task<ClientesDto> GetById(int Id)
         {
-            var autor = await _context.Clientes.FirstOrDefaultAsync(a=>a.Id == Id);
+            var autor = await _context.Clientes.FirstOrDefaultAsync(a=>a.Identificacion == Id);
             ClientesDto mapAutor = _mapper.Map<ClientesDto>(autor);
             return mapAutor;
         }
@@ -43,31 +45,29 @@ namespace PedidosSYAC.Services.Services
         public async Task<ClientesDto> AddCliente(ClientesCreacionDto cliente)
         {
             var nuevoCliente = _mapper.Map<Clientes>(cliente);
+            var existeCliente = await GetById(cliente.Identificacion);
+            if (existeCliente!=null) throw new Exception("cliente existente");
             var result = await _context.Clientes.AddAsync(nuevoCliente);
             await _context.SaveChangesAsync();
-            ClientesDto newBookAdded = await GetById(result.Entity.Id);
+            ClientesDto newBookAdded = await GetById(result.Entity.Identificacion);
             return newBookAdded;
         }
   
         public async Task UpdateCliente(ClientesActualizarDto cliente)
         {
-            var xd = _context.Clientes.FirstOrDefault(a=>a.Id == cliente.Id);
+            var xd = _context.Clientes.FirstOrDefault(a=>a.Identificacion == cliente.Identificacion);
             if (xd != null) {
+                xd.Identificacion= cliente.Identificacion;
                 xd.Nombre= cliente.Nombre;
                 xd.Direccion= cliente.Direccion;
-        await _context.SaveChangesAsync();
+                await _context.SaveChangesAsync();
             }
         }
 
 
-        public async Task DeleteCliente(ClientesDto cliente) 
+        public async Task<int> DeleteClienteAsync(int identification) 
         {
-            var findAutor = _context.Clientes.FirstOrDefault(a=>a.Id == cliente.Id);
-            if(findAutor != null)
-            {
-                _context.Clientes.Remove(findAutor);
-                await _context.SaveChangesAsync();
-            }
+            return await _context.Clientes.Where(a=>a.Identificacion == identification).ExecuteDeleteAsync();
         }
     }
 }

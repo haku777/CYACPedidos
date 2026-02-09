@@ -7,7 +7,7 @@
 namespace PedidosSYAC.DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class Inicial : Migration
+    public partial class inicial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -62,7 +62,6 @@ namespace PedidosSYAC.DataAccess.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Id_Cliente = table.Column<int>(type: "int", nullable: false),
-                    Id_Producto = table.Column<int>(type: "int", nullable: false),
                     Id_Estado = table.Column<int>(type: "int", nullable: false),
                     ValorTotal = table.Column<int>(type: "int", nullable: false)
                 },
@@ -79,12 +78,6 @@ namespace PedidosSYAC.DataAccess.Migrations
                         name: "FK_Pedidos_Estados_Id_Estado",
                         column: x => x.Id_Estado,
                         principalTable: "Estados",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Pedidos_Productos_Id_Producto",
-                        column: x => x.Id_Producto,
-                        principalTable: "Productos",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -108,11 +101,6 @@ namespace PedidosSYAC.DataAccess.Migrations
                 name: "IX_Pedidos_Id_Estado",
                 table: "Pedidos",
                 column: "Id_Estado");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Pedidos_Id_Producto",
-                table: "Pedidos",
-                column: "Id_Producto");
         }
 
         /// <inheritdoc />
@@ -122,13 +110,13 @@ namespace PedidosSYAC.DataAccess.Migrations
                 name: "Pedidos");
 
             migrationBuilder.DropTable(
+                name: "Productos");
+
+            migrationBuilder.DropTable(
                 name: "Clientes");
 
             migrationBuilder.DropTable(
                 name: "Estados");
-
-            migrationBuilder.DropTable(
-                name: "Productos");
         }
     }
 }

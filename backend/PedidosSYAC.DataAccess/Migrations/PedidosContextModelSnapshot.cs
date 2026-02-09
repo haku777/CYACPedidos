@@ -93,9 +93,6 @@ namespace PedidosSYAC.DataAccess.Migrations
                     b.Property<int>("Id_Estado")
                         .HasColumnType("int");
 
-                    b.Property<int>("Id_Producto")
-                        .HasColumnType("int");
-
                     b.Property<int>("ValorTotal")
                         .HasColumnType("int");
 
@@ -104,8 +101,6 @@ namespace PedidosSYAC.DataAccess.Migrations
                     b.HasIndex("Id_Cliente");
 
                     b.HasIndex("Id_Estado");
-
-                    b.HasIndex("Id_Producto");
 
                     b.ToTable("Pedidos");
                 });
@@ -147,17 +142,9 @@ namespace PedidosSYAC.DataAccess.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("PedidosSYAC.DataAccess.Entity.Productos", "Producto")
-                        .WithMany()
-                        .HasForeignKey("Id_Producto")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Cliente");
 
                     b.Navigation("Estado");
-
-                    b.Navigation("Producto");
                 });
 #pragma warning restore 612, 618
         }

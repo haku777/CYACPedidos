@@ -13,7 +13,7 @@
 - [x] AutoMapper
 - [x] Swagger
 - [x] Entity Framework
-- [ ] Angular V --
+- [ ] Angular V 21
 
 > :information_source: aun fatal agretar la tabla ProductosXPedido y su funcionamiento
 
@@ -43,7 +43,7 @@
 - [ ] Prioridad (Regla prioridad del pedido con base en el monto total; Baja: <= $500, Media: > $500 y <=1000, Alta: >1000)
 - [ ] Se puede implementar un singleton para los **Estados**
 - [ ] Creacion componentes Angular
-- [ ] UD/IU Responsive
+- [ ] UX/IU Responsive
 
 [***Portafolio***](https://haku777.vercel.app)
 
