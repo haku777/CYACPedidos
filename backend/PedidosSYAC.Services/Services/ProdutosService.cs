@@ -18,31 +18,30 @@ namespace PedidosSYAC.Services.Services
 
         public  async Task<List<ProductoDto>> Get()
         {
-            var books =  await _context.Productos.ToListAsync();
-            List<ProductoDto> booksList = new List<ProductoDto>();
-            foreach (var book in books) {
-                var bookItem = _mapper.Map<ProductoDto>(book);
-                booksList.Add(bookItem);
+            var Productos =  await _context.Productos.ToListAsync();
+            List<ProductoDto> listaProductos = new List<ProductoDto>();
+            foreach (var Producto in Productos) {
+                var producto = _mapper.Map<ProductoDto>(Producto);
+                listaProductos.Add(producto);
             }
 
-            return booksList;
+            return listaProductos;
         }
 
         public async Task<ProductoDto> GetByName(string nombreProducto)
         {
-            var book = await _context.Productos.FirstOrDefaultAsync(b => b.Nombre == nombreProducto);
-            ProductoDto mapBook = _mapper.Map<ProductoDto>(book);
-            return mapBook;
+            var productoBusqueda = await _context.Productos.FirstOrDefaultAsync(b => b.Nombre == nombreProducto);
+            ProductoDto producto = _mapper.Map<ProductoDto>(productoBusqueda);
+            return producto;
         }
 
-        public async Task<ProductoDto> AddProducto(ProductoCreacionDto book)
+        public async Task<ProductoDto> AddProducto(ProductoCreacionDto producto)
         {
-
-            Productos newBook = _mapper.Map<Productos>(book);
-            var result = await _context.Productos.AddAsync(newBook);
+            Productos productoMapeado = _mapper.Map<Productos>(producto);
+            var result = await _context.Productos.AddAsync(productoMapeado);
             await _context.SaveChangesAsync();
-            ProductoDto newBookAdded = await GetByName(result.Entity.Nombre);
-            return newBookAdded;
+            ProductoDto productoAgregado = await GetByName(result.Entity.Nombre);
+            return productoAgregado;
         }
 
         public async Task UpdateProducto(ProductoActualizacionDto producto)
@@ -58,11 +57,11 @@ namespace PedidosSYAC.Services.Services
             }
         }
 
-        public void DeleteProducto(ProductoDto book) {
-            var findBook = _context.Productos.FirstOrDefault(a => a.Id == book.Id);
-            if (findBook != null)
+        public void DeleteProducto(ProductoDto producto) {
+            var productoExistente = _context.Productos.FirstOrDefault(a => a.Id == producto.Id);
+            if (productoExistente != null)
             {
-                _context.Productos.Remove(findBook);
+                _context.Productos.Remove(productoExistente);
                 _context.SaveChanges();
             }
         }

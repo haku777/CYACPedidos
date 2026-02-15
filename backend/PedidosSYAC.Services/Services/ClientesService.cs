@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PedidosSYAC.Common.Dto.Clientes;
@@ -22,22 +23,17 @@ namespace PedidosSYAC.Services.Services
         public async Task<List<ClientesDto>> Get()
         {
             var clientes = await _context.Clientes.ToListAsync();
-            
-            List<ClientesDto> listClientes = new List<ClientesDto>();
+            //mapeamos todos los clientes evitando mapear uno a uno
+            //return _mapper.Map<List<ClientesDto>>(clientes);
 
-            foreach (Clientes cliente in clientes) {
-                   ClientesDto clienteItem = _mapper.Map<ClientesDto>(cliente);
-
-                listClientes.Add(clienteItem);
-            }
-
-            return listClientes;
+            //mapeo solo de las columnas necesarias
+            return await _context.Clientes.ProjectTo<ClientesDto>(_mapper.ConfigurationProvider).ToListAsync();
         }
 
 
-        public async Task<ClientesDto> GetById(int Id)
+        public async Task<ClientesDto> GetByIdentificacion(int Identificacion)
         {
-            var autor = await _context.Clientes.FirstOrDefaultAsync(a=>a.Identificacion == Id);
+            var autor = await _context.Clientes.FirstOrDefaultAsync(a=>a.Identificacion == Identificacion);
             ClientesDto mapAutor = _mapper.Map<ClientesDto>(autor);
             return mapAutor;
         }
@@ -45,11 +41,11 @@ namespace PedidosSYAC.Services.Services
         public async Task<ClientesDto> AddCliente(ClientesCreacionDto cliente)
         {
             var nuevoCliente = _mapper.Map<Clientes>(cliente);
-            var existeCliente = await GetById(cliente.Identificacion);
+            var existeCliente = await GetByIdentificacion(cliente.Identificacion);
             if (existeCliente!=null) throw new Exception("cliente existente");
             var result = await _context.Clientes.AddAsync(nuevoCliente);
             await _context.SaveChangesAsync();
-            ClientesDto newBookAdded = await GetById(result.Entity.Identificacion);
+            ClientesDto newBookAdded = await GetByIdentificacion(result.Entity.Identificacion);
             return newBookAdded;
         }
   

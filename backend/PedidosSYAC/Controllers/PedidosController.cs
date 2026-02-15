@@ -11,10 +11,18 @@ namespace PedidosSYAC.Controllers
 
         [HttpGet]
         [Route("GetPedidos")]
-        public Task<List<PedidosDto>> GetPedidos()
+        public async Task<List<PedidosDto>> GetPedidos()
         {
-            var pedidos = _pedidos.Get();
+            var pedidos = await _pedidos.Get();
             return pedidos;
+        }
+
+        [HttpPost]
+        [Route("AddPedido")]
+        public async Task<PedidosDto> AddPedido([FromBody] PedidosCreacionDto PedidoDto) {
+            //validar pedido
+            var pedidoValido = await _pedidos.AddPedido(PedidoDto);
+            return pedidoValido;
         }
     }
 }

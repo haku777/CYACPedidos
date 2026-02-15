@@ -128,6 +128,35 @@ namespace PedidosSYAC.DataAccess.Migrations
                     b.ToTable("Productos", (string)null);
                 });
 
+            modelBuilder.Entity("PedidosSYAC.DataAccess.Entity.ProductosXPedido", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Cantidad")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Id_Pedido")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Id_Producto")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ValorPorCantidad")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Id_Pedido");
+
+                    b.HasIndex("Id_Producto");
+
+                    b.ToTable("ProductosXPedido");
+                });
+
             modelBuilder.Entity("PedidosSYAC.DataAccess.Entity.Pedidos", b =>
                 {
                     b.HasOne("PedidosSYAC.DataAccess.Entity.Clientes", "Cliente")
@@ -145,6 +174,25 @@ namespace PedidosSYAC.DataAccess.Migrations
                     b.Navigation("Cliente");
 
                     b.Navigation("Estado");
+                });
+
+            modelBuilder.Entity("PedidosSYAC.DataAccess.Entity.ProductosXPedido", b =>
+                {
+                    b.HasOne("PedidosSYAC.DataAccess.Entity.Pedidos", "Pedido")
+                        .WithMany()
+                        .HasForeignKey("Id_Pedido")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("PedidosSYAC.DataAccess.Entity.Productos", "Producto")
+                        .WithMany()
+                        .HasForeignKey("Id_Producto")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Pedido");
+
+                    b.Navigation("Producto");
                 });
 #pragma warning restore 612, 618
         }

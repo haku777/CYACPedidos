@@ -17,4 +17,8 @@
     <ProjectReference Include="..\PedidosSYAC.DataAccess\PedidosSYAC.DataAccess.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\Utilities\" />
+  </ItemGroup>
+
 </Project>

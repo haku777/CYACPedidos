@@ -54,6 +54,17 @@ CREATE TABLE ProdutosXPedidos (
 );
 
 select * from Clientes
-select * from Productos
 select * from Estados
+select * from Productos
 select * from Pedidos
+select * from ProductosXPedido
+
+insert into Clientes (Identificacion,Nombre,Direccion)Values(123456789,'HAKU','DIR')
+insert into Productos (Nombre,Cantidad,ValorUnitario)Values('Jabon',2,10)
+insert into Productos (Nombre,Cantidad,ValorUnitario)Values('Shampo',2,30)
+insert into Pedidos (Id_cliente,Id_Estado,ValorTotal)Values(1,1,80)
+insert into ProductosXPedido (Id_pedido,Id_producto,Cantidad,ValorPorCantidad)Values(1,1,2,20)
+insert into ProductosXPedido (Id_pedido,Id_producto,Cantidad,ValorPorCantidad)Values(1,2,2,60)
+
+
+

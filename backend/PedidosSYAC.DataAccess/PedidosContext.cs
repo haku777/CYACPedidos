@@ -14,6 +14,7 @@ namespace PedidosSYAC.DataAccess
         public DbSet<Productos> Productos { get; set; }
         public DbSet<Estados> Estados { get; set; }
         public DbSet<Pedidos> Pedidos { get; set; }
+        public DbSet<ProductosXPedido> ProductosXPedido { get; set; }
 
 
         //se agregan los estados :) para evitar la molestia de crearlos XD

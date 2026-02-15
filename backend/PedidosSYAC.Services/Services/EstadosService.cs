@@ -25,10 +25,10 @@ namespace PedidosSYAC.Services.Services
             return listaEstados;
         }
 
-        public async Task<List<EstadosDto>> GetAllByDto()
+        public async Task<List<EstadosSoloNombreDto>> GetAllByDto()
         {
             //ProjectTo hace que AutoMapper modifique la consulta SQL para traer solo las columnas necesarias
-            return await _context.Estados.ProjectTo<EstadosDto>(_mapper.ConfigurationProvider).ToListAsync();
+            return await _context.Estados.ProjectTo<EstadosSoloNombreDto>(_mapper.ConfigurationProvider).ToListAsync();
         }
     }
 }

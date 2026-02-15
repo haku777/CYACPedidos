@@ -9,7 +9,7 @@ namespace PedidosSYAC.Controllers
     {
         private readonly IEstados _estados;
         public EstadosController(IEstados estados) { _estados = estados; }
-        
+
         [HttpGet]
         [Route("GetEstados")]
         public Task<List<EstadosDto>> GetEstados()
@@ -17,5 +17,15 @@ namespace PedidosSYAC.Controllers
             var estados = _estados.Get();
             return estados;
         }
+
+        [HttpGet]
+        [Route("GetEstadosFiltered")]
+        public async Task<List<EstadosSoloNombreDto>> GetAllByDto() { 
+            var estados = await _estados.GetAllByDto();
+            return estados;
+        }
+
+
+
     }
 }

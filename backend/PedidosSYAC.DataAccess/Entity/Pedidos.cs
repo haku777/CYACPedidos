@@ -14,11 +14,11 @@ namespace PedidosSYAC.DataAccess.Entity
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public int Id_Cliente { get; set; }
+
         [ForeignKey("Id_Cliente")]
-        public virtual Clientes Cliente { get; set; }
+        public Clientes Cliente { get; set; }
         [ForeignKey("Id_Estado")]
-        public virtual Estados Estado { get; set; }
+        public Estados Estado { get; set; }
         public int ValorTotal { get; set; }
 
     }

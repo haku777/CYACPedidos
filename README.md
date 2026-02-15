@@ -45,6 +45,12 @@
 - [ ] Creacion componentes Angular
 - [ ] UX/IU Responsive
 
+>### posibles tablas y funciones
+- [ ] facturas
+- [ ] historico
+- [ ] auditoria
+- [ ] logs
+
 [***Portafolio***](https://haku777.vercel.app)
 
 

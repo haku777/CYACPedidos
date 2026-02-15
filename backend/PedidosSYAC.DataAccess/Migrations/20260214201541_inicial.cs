@@ -82,6 +82,34 @@ namespace PedidosSYAC.DataAccess.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "ProductosXPedido",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id_Pedido = table.Column<int>(type: "int", nullable: false),
+                    Id_Producto = table.Column<int>(type: "int", nullable: false),
+                    Cantidad = table.Column<int>(type: "int", nullable: false),
+                    ValorPorCantidad = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ProductosXPedido", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_ProductosXPedido_Pedidos_Id_Pedido",
+                        column: x => x.Id_Pedido,
+                        principalTable: "Pedidos",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_ProductosXPedido_Productos_Id_Producto",
+                        column: x => x.Id_Producto,
+                        principalTable: "Productos",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.InsertData(
                 table: "Estados",
                 columns: new[] { "Id", "Estado" },
@@ -101,11 +129,24 @@ namespace PedidosSYAC.DataAccess.Migrations
                 name: "IX_Pedidos_Id_Estado",
                 table: "Pedidos",
                 column: "Id_Estado");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ProductosXPedido_Id_Pedido",
+                table: "ProductosXPedido",
+                column: "Id_Pedido");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ProductosXPedido_Id_Producto",
+                table: "ProductosXPedido",
+                column: "Id_Producto");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "ProductosXPedido");
+
             migrationBuilder.DropTable(
                 name: "Pedidos");
 

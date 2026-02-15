@@ -43,16 +43,17 @@
         }
       }
     },
-    "/api/Clientes/GetClienteById": {
+    "/api/Clientes/GetClienteByIdentificacion/{identificacion}": {
       "get": {
         "tags": [
           "Clientes"
         ],
         "parameters": [
           {
-            "name": "Id",
-            "in": "query",
-            "style": "form",
+            "name": "Identificacion",
+            "in": "path",
+            "required": true,
+            "style": "simple",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -367,6 +368,44 @@
         }
       }
     },
+    "/GetEstadosFiltered": {
+      "get": {
+        "tags": [
+          "Estados"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EstadosSoloNombreDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EstadosSoloNombreDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EstadosSoloNombreDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/GetPedidos": {
       "get": {
         "tags": [
@@ -398,6 +437,54 @@
                   "items": {
                     "$ref": "#/components/schemas/PedidosDto"
                   }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/AddPedido": {
+      "post": {
+        "tags": [
+          "Pedidos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PedidosDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PedidosDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PedidosDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PedidosDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PedidosDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PedidosDto"
                 }
               }
             }
@@ -672,6 +759,8 @@
         "type": "object",
         "properties": {
           "identificacion": {
+            "maximum": 2000000000,
+            "minimum": 100000000,
             "type": "integer",
             "format": "int32"
           },
@@ -680,6 +769,20 @@
             "nullable": true
           },
           "direccion": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ClientesDataDto": {
+        "type": "object",
+        "properties": {
+          "identificacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
             "type": "string",
             "nullable": true
           }
@@ -722,6 +825,16 @@
         },
         "additionalProperties": false
       },
+      "EstadosSoloNombreDto": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "PedidosDto": {
         "type": "object",
         "properties": {
@@ -729,17 +842,11 @@
             "type": "integer",
             "format": "int32"
           },
-          "id_Cliente": {
-            "type": "integer",
-            "format": "int32"
+          "cliente": {
+            "$ref": "#/components/schemas/ClientesDataDto"
           },
-          "id_Producto": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "id_Estado": {
-            "type": "integer",
-            "format": "int32"
+          "estado": {
+            "$ref": "#/components/schemas/EstadosDto"
           },
           "valorTotal": {
             "type": "integer",

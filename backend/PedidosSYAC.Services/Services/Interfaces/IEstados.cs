@@ -10,5 +10,6 @@ namespace PedidosSYAC.Services.Services.Interfaces
     public interface IEstados
     {
         Task<List<EstadosDto>> Get();
+        Task<List<EstadosSoloNombreDto>> GetAllByDto();
     }
 }

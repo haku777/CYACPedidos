@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "PedidosSYAC.Controllers.PedidosController",
+    "Method": "AddPedido",
+    "RelativePath": "AddPedido",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PedidoDto",
+        "Type": "PedidosSYAC.Common.Dto.Pedidos.PedidosDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PedidosSYAC.Common.Dto.Pedidos.PedidosDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "PedidosSYAC.Controllers.ClientesController",
     "Method": "AddCliente",
     "RelativePath": "api/Clientes/AddCliente",
@@ -76,16 +102,16 @@
   },
   {
     "ContainingType": "PedidosSYAC.Controllers.ClientesController",
-    "Method": "GetClienteById",
-    "RelativePath": "api/Clientes/GetClienteById",
+    "Method": "GetClienteByIdentificacion",
+    "RelativePath": "api/Clientes/GetClienteByIdentificacion/{identificacion}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
+        "Name": "Identificacion",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
@@ -337,6 +363,26 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.List\u00601[[PedidosSYAC.Common.Dto.Estados.EstadosDto, PedidosSYAC.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PedidosSYAC.Controllers.EstadosController",
+    "Method": "GetAllByDto",
+    "RelativePath": "GetEstadosFiltered",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PedidosSYAC.Common.Dto.Estados.EstadosSoloNombreDto, PedidosSYAC.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

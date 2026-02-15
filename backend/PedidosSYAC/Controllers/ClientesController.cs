@@ -22,16 +22,16 @@ namespace PedidosSYAC.Controllers
         }
 
         [HttpGet]
-        [Route("GetClienteById")]
+        [Route("GetClienteByIdentificacion/{identificacion}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<ClientesDto>> GetClienteById(int Id)
+        public async Task<ActionResult<ClientesDto>> GetClienteByIdentificacion(int Identificacion)
         {
-            if (Id == 0)
+            if (Identificacion <= 0)
                 return NotFound();
 
-            var result = await _cliente.GetById(Id);
+            var result = await _cliente.GetByIdentificacion(Identificacion);
 
             if (result == null)
                 return NotFound();
@@ -69,7 +69,7 @@ namespace PedidosSYAC.Controllers
             if (cliente == null)
                 return NotFound();
 
-            var result = await _cliente.GetById(cliente.Identificacion);
+            var result = await _cliente.GetByIdentificacion(cliente.Identificacion);
 
             if (result == null)
                 return BadRequest();
@@ -87,13 +87,12 @@ namespace PedidosSYAC.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> DeleteCliente(int Identificacion)
         {
-            if (Identificacion == null || Identificacion == 0)
+            if (Identificacion <= 0)
                 return BadRequest();
 
             int eliminado = await _cliente.DeleteClienteAsync(Identificacion);
             if (eliminado == 0)
                 return NotFound();
-
 
             return Ok(new { message = "Cliente eliminado correctamente"});
         }
